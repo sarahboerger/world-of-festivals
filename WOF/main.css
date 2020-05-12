@@ -17,17 +17,17 @@
 }
 
 body {
-  background:
+  background: ;
 }
 
 .topnav {
   background: var(--brand-color1);
-  color:
+  color: ;
   height: 50px;
   display: flex;
 }
 
 .topnav .pages {
   display: flex;
-  color:
+  color: ;
 }
