@@ -1,0 +1,166 @@
+/* variabler (også kaldet "custom properties") */
+:root { /* i HTML-dokumenter er root det samme som <html> */
+    --brand-color1: #191970; /*Mørkeblå*/
+    --brand-color3: #ff00ff; /*Neon pink*/
+    --brand-color4: #6a0dad; /*Mørkelilla*/
+    --brand-color5: #b6784c; /*Lys-jord-brun*/
+    --brand-color6: #efefef; /*Lysegrå*/
+    --brand-font-title: helvetica, sans-serif;
+    --brand-font-text: tahoma, arial, sans-serif;
+}
+/*Universal info*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: var(--brand-color1);
+    text-align: right;
+      align-items: right;
+}
+
+body {
+background-color: var(--brand-color5);
+  color: var(--brand-color6);
+}
+
+.footer {
+  background-color: var(--brand-color1);
+  /*  background-color: var(--brand-color1);*/
+}
+
+
+/*Forside*/
+#forsideVideo {
+      width: 100%;
+      height: auto;
+}
+
+.aboutUs {
+  margin-top: 2%;
+  /*font-size: 200%;*/
+}
+
+/*Festival side*/
+#infobox1 {
+  border: solid #6a0dad;
+    margin-bottom: 1%;
+      background-color: #9e6a44;
+
+}
+
+#infobox2 {
+    border: solid #ff00ff;
+      margin-bottom: 1%;
+        background-color: #9e6a44;
+}
+
+#infobox1 a{
+  color: var(--brand-color1);
+}
+
+#infobox2 a{
+    color: var(--brand-color1);
+}
+
+#infobox1 a:hover{
+  color: var(--brand-color6);
+}
+
+#infobox2 a:hover{
+    color: var(--brand-color6);
+}
+
+#seeMoreLess a{
+  color:  var(--brand-color6);
+}
+
+#seeMoreLess a:hover{
+  color: #a6a6a6;
+}
+
+/*Festivalsundersider*/
+#infobox3{
+    margin-bottom: 1%;
+      background-color: #9e6a44;
+}
+
+/*slideshows til festivals undersider*/
+#slideshow {
+      display: flex;
+        width: auto;
+          position:relative;
+            height:350px;
+              align-items: center;
+                text-align: center;
+}
+#slideshow IMG {
+    position:absolute;
+      top:0;
+        left:0;
+          z-index:8;
+}
+#slideshow IMG.active {
+    z-index:10;
+}
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+.infotext {
+  margin-top: 2%;
+}
+
+/*Guide-side*/
+.packingList {
+  display: block;
+    align-items: center;
+      text-align: center;
+}
+
+
+/*Kontaktside*/
+#contact-form {
+    align-items: center;
+      justify-content: center;
+        width: 100%;
+          display: table;
+            margin-right: 1%;
+}
+
+#kontaktKnap {
+  display: table;
+    margin: 0 auto;
+      margin-top: 2%;
+        margin-bottom: 2%;
+          background: var(--brand-color1);
+            color: var(--brand-color6);
+}
+
+#kontaktKnap:hover{
+  background: var(--brand-color4);
+}
+
+#kontaktInfo {
+  margin-top: 2%;
+}
+
+#fyldeDiv {
+  margin-top: 4%;
+}
+
+
+/*Footer*/
+footer a {
+  color: #8c8cb8;
+}
+
+footer a:hover{
+  color: #c5c5db;
+}
+
+footer i {
+  font-size: 170%;
+    margin-top: 5.5%;
+}
