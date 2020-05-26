@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World of Festivals</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/9cb253356d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Navigation i toppen, bygget op af bootstrap -->
+    <div class="row">
+      <!-- fylder alle 12 kolonner-->
+      <nav class="col-12 navbar navbar-expand-md navbar-dark text-right">
+        <a class="navbar-brand" href="index.html"><img src="img/WOF_Final_Cropped.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          World of Festivals</a>
+        <!-- knap der gør at det bliver en "lukket nav-bar" i telefon tilstand-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Ovenstående kode gør, at nedenstående links bliver samlet i en drop-down menu i mobil format-->
+        <div class="collapse navbar-collapse text-right" id="collapsibleNavbar">
+          <ul class="navbar-nav navbar-light">
+            <li class="nav-item">
+              <a class="nav-link" href="festivals.html">Festivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packing.html">Packing guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Præsentationsvideo-->
+    <div class="row">
+      <video id="forsideVideo" class="embed-responsive embed-responsive-16by9" src="filer/01_4_3.mp4" poster="img/posterimage.png" autoplay controls>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!--Pagebreaker, så siden ikke er så tom -->
+    <div class="row">
+      <div id="Line1" class="col-12">
+        <h1>FESTIVALS MADE EASY</h1>
+      </div>
+    </div>
+
+    <div class="row row-no-gutters">
+      <!--Div der skubber content ind på midten af siden -->
+      <div class="col-sm-0 col-md-0 col-lg-2">
+      </div>
+      <!--Kort beskrivelse af siden-->
+      <div class="col-sm-0 col-md-0 col-lg-8 aboutUs">
+        <p>World of festivals is a service that helps you get the most out of your trips. If you are going to a festival for the first time, we can help you with a packinglist. And if you've been there before, we can help you with finding stuff to do
+          in the area.
+          <br>
+          <br>
+          We are the influencers of the festival world, to help spread the festivals around to both festival people and new people interested in going. We strife to give you a good experience with choosing the right festival for you.
+        </p>
+      </div>
+      <!--Div der skubber content ind på midten af siden -->
+      <div class="col-sm-0 col-md-0 col-lg-2">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Div der skubber content ind på midten af siden -->
+      <div class="col-sm-0 col-md-3">
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <img class="embed-responsive" src="img/banner.jpg" alt="" style="margin-bottom: 2%; margin-top: 2%;">
+      </div>
+      <!--Div der skubber content ind på midten af siden -->
+      <div class="col-sm-0 col-md-3">
+      </div>
+    </div>
+
+
+    <!-- Footeren starter-->
+    <footer class="page-footer font-small">
+      <div class="row footer">
+        <!-- SoMe Links-->
+        <div class="col-4 text-center">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://drive.google.com/file/d/1CG71da6VJLNIBVk-CvhDH41w1pPtCWad/view?usp=sharing" target="_blank"><i class="fab fa-instagram-square"></i></a>
+          <a href="https://drive.google.com/file/d/1kH4NNBdw2r_ZDlRJ4sWQkp0oeDBnhUH2/view?usp=sharing" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fas fa-envelope-square"></i></a>
+        </div>
+        <!-- links til de andre sider -->
+        <div class="col-4 text-center">
+          <div class="col">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="col">
+            <a href="festivals.html">Festivals</a>
+          </div>
+          <div class="col">
+            <a href="packing.html">Tips to pack</a>
+          </div>
+          <div class="col">
+            <a href="contact.html">Contact & FAQs</a>
+          </div>
+        </div>
+        <!--Adversel om at det er en skoleopgave -->
+        <div class="col-4 text-center">
+          <p>This is a school project made by Sarah Billing Børger, Kristina Pavlovic and Sara Nikoline Schou Andreasen. We are in no way associated with any of the festivals listed here. This is purely a work of fiction.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
