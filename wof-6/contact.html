@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/9cb253356d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <!-- Navigation i toppen, bygget op af bootstrap -->
+    <div class="row">
+      <!-- fylder alle 12 kolonner-->
+      <nav class="col-12 navbar navbar-expand-md navbar-dark text-right">
+        <a class="navbar-brand" href="index.html"><img src="img/WOF_Final_Cropped.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          World of Festivals</a>
+        <!-- knap der gør at det bliver en "lukket nav-bar" i telefon tilstand-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Ovenstående kode gør, at nedenstående links bliver samlet i en drop-down menu i mobil format-->
+        <div class="collapse navbar-collapse text-right" id="collapsibleNavbar">
+          <ul class="navbar-nav navbar-light">
+            <li class="nav-item">
+              <a class="nav-link" href="festivals.html">Festivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packing.html">Packing guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact and FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- FAQ's -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Frequently asked questions</h1>
+        <p>Your question might already have been answered so we've collected some of our most frequently asked questions below. Please read them through, before submitting a question.</p>
+      </div>
+    </div>
+    <!--kolonnen fylder 6 i gridet - til sprøgsmålene  -->
+    <div class="row" id="kontaktInfo">
+      <div class="col-lg-6">
+        <h4>Do you sell tickets?</h4>
+        <p>No, we do not sell tickets. For tickets we'll refer you to the festivals own site on their domain. There's links to the different festivals under their section.</p>
+        <br>
+        <br>
+        <h4>I want my ticket refunded</h4>
+        <p>As we're not a part of any of the festivals listed, we can't refund your ticket. Please contact the costumer support of the festival you've been to for refunds.</p>
+        <br>
+        <br>
+        <h4>Why do you not have X Festival listed?</h4>
+        <p>We do not have some festivals listed as they do not want to be on our list. The festival could also be located further down in our list. If you want a festival to be on our list, you can suggest a festival in the form below.</p>
+        <br>
+        <br>
+        <h4>I know of a good festival not listed/ I represent a festival not listed and wish to have it listed on your site, how would I do that?</h4>
+        <p>If you represent a festival you can contact us on notarealemail@wof.com and we can sort it out there. If you want us to reach out to a festival, you can send your recommendation in the form to the right, with the subject "festival
+          recommendation".</p>
+        <br>
+        <br>
+        <h4>Where can I see the lineup?</h4>
+        <p>Unfortunately we do not show the lineup to the festival. If you're interested in one of the festivals, you can go to the festivals own page here and follow the link to their website.</p>
+      </div>
+      <div class="col-lg-6">
+        <!--Kontaktformular starter-->
+        <section>
+          <!--header-->
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Need help? Feel free to send us a message below</h2>
+          <!--Beskrivelse-->
+          <p class="text-center w-responsive mx-auto mb-5">If you have any questions don't hesitate to ask us, we will get back to you as fast as possible.</p>
+
+          <div class="row">
+            <div class="col">
+              <form id="contact-form" name="contact-form" novalidate>
+                <div class="row">
+
+                  <!--Navn-del-->
+                  <div class="col-md-6">
+                    <div>
+                      <label for="name">Your Name</label>
+                      <input type="text" id="name" name="name" class="form-control" required>
+                      <div class="invalid-feedback">
+                        Please type your name.
+                      </div>
+                    </div>
+                  </div>
+                  <!--Email-del-->
+                  <div class="col-md-6">
+                    <div class="md-form">
+                      <label for="email">Your Email</label>
+                      <input type="text" id="email" name="email" class="form-control" required>
+                      <div class="invalid-feedback">
+                        Please type your email.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Subject del-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" name="subject" class="form-control" required>
+                      <div class="invalid-feedback">
+                        Please type your subject.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Message del-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <label for="message">Your Message</label>
+                      <textarea id="message" name="message" class="form-control md-textarea" required></textarea>
+                      <div class="invalid-feedback">
+                        Please type your message.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!--Submit knap-->
+              <div class="row">
+                <a class="btn btn-primary" id="kontaktKnap" onclick="validateForm();" style="color: #efefef;">Send</a>
+              </div>
+              <!--Error besked tilbagemelding -->
+              <div class="status"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Scripter til formularen-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+    </div>
+
+    <!-- Fyldediv der skal fylde det resterende ud, så footeren ikke sidder på midten af siden-->
+    <div class="row">
+      <div class="col-sm-0 col-md-0 col-lg-12" id="fyldeDiv">
+      </div>
+    </div>
+
+    <!-- Footeren starter-->
+    <footer class="page-footer font-small">
+      <div class="row footer">
+        <!-- SoMe Links-->
+        <div class="col-4 text-center">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fas fa-envelope-square"></i></a>
+        </div>
+        <!-- links til de andre sider -->
+        <div class="col-4 text-center">
+          <div class="col">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="col">
+            <a href="festivals.html">Festivals</a>
+          </div>
+          <div class="col">
+            <a href="packing.html">Tips to pack</a>
+          </div>
+          <div class="col">
+            <a href="contact.html">Contact & FAQs</a>
+          </div>
+        </div>
+        <!--Adversel om at det er en skoleopgave -->
+        <div class="col-4 text-center">
+          <p>This is a school project made by Sarah Billing Børger, Kristina Pavlovic and Sara Nikoline Schou Andreasen. We are in no way associated with any of the festivals listed here. This is purely a work of fiction.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
